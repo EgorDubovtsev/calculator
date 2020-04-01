@@ -15,4 +15,5 @@ public class IllegalOperation extends Exception {
     public IllegalOperation(Throwable cause) {
         super(cause);
     }
+
 }

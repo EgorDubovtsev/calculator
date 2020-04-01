@@ -2,7 +2,6 @@ package service;
 
 
 import exceptions.IllegalOperation;
-
 import java.util.LinkedList;
 import java.util.Stack;
 
