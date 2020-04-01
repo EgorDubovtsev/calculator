@@ -17,7 +17,7 @@ public class CalculationService {
         while (!(polandNotation.size() == 1)) {
             try {
                 operationCheck = polandNotation.get(i + 2);
-            }catch (IndexOutOfBoundsException e){
+            } catch (IndexOutOfBoundsException e) {
                 throw new IllegalArgumentException("Неправильно составлен пример, убедитесь в его правильности.");
             }
 
@@ -52,7 +52,7 @@ public class CalculationService {
                 }
             }
         }
-        if (Double.valueOf(polandNotation.getFirst()).equals(Double.POSITIVE_INFINITY)||Double.valueOf(polandNotation.getFirst()).equals(Double.NEGATIVE_INFINITY)){
+        if (Double.valueOf(polandNotation.getFirst()).equals(Double.POSITIVE_INFINITY) || Double.valueOf(polandNotation.getFirst()).equals(Double.NEGATIVE_INFINITY)) {
             throw new ArithmeticException("Произошла попытка деления на ноль.");
         }
         consoleInputOutputService.printResult(polandNotation.getFirst());

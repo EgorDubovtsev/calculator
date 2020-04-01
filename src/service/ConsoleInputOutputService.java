@@ -1,7 +1,6 @@
 package service;
 
 import exceptions.IllegalOperation;
-
 import java.util.Scanner;
 
 public class ConsoleInputOutputService {
